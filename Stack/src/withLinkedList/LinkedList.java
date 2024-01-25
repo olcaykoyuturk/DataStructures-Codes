@@ -38,9 +38,7 @@ public class LinkedList {
             System.out.println("Stack zaten bos!!");
         } else {
             System.out.println("Stack'tan eleman cikartildi => " + top.data);
-            Node temp = top;
             top = top.next;
-            temp.next = null; // Opsiyonel, gereksiz referansları null yapmak iyi bir pratiktir.
             indis--;
         }
     }
